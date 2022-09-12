@@ -103,6 +103,7 @@
           <ul class="legend">
             <li>Mail precincts: yellow fill</li>
             <li>Walk precincts: purple fill</li>
+            <li>Unknown precincts: white fill</li>
             <li>Area: heavy black border</li>
             <li>Precinct: red border</li>
             <li>Selected Precinct: grey border, no fill color</li>
@@ -159,16 +160,28 @@
         return {
           fill: true,
           fillOpacity: 0.2,
-          fillColor: pctFillColor(feature.properties.mountains),
+          fillColor: pctFillColor(feature),
           color: "red",
           weight: 1,
           opacity: 1,
         };
       }
 
-      function pctFillColor(mtn) {
-        if (mtn === "True") return "yellow";
-        return "blue";
+      function pctFillColor(feature) {
+        switch (feature.properties.mountains) {
+          case "Unknown":
+            pct_color = "white";
+            break;
+          case "True":
+            pct_color = "yellow";
+            break;
+          case "False":
+            pct_color = "blue";
+            break;
+          default:
+            pct_color = "black";
+        }
+        return pct_color;
       }
 
       function onEachFeature(feature, layer) {

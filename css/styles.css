@@ -97,6 +97,7 @@ p {
 }
 
 .sb-help {
+  color: chartreuse;
   text-align: center;
   font-style: italic;
 }

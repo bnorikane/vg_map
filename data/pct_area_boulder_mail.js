@@ -26427,7 +26427,7 @@ pct_data = {
         precinct: "649",
         area_short: "LM-07",
         area_long: "Longmont-07",
-        mountains: "True",
+        mountains: "Unknown",
       },
       geometry: {
         type: "Polygon",
@@ -32028,7 +32028,7 @@ pct_data = {
         precinct: "824",
         area_short: "BO-07",
         area_long: "Boulder-07",
-        mountains: "True",
+        mountains: "False",
       },
       geometry: {
         type: "Polygon",
@@ -32880,7 +32880,7 @@ pct_data = {
         precinct: "303",
         area_short: "LF-01",
         area_long: "Lafayette-01",
-        mountains: "True",
+        mountains: "Unknown",
       },
       geometry: {
         type: "Polygon",
@@ -34583,7 +34583,7 @@ pct_data = {
         precinct: "613",
         area_short: "LM-01",
         area_long: "Longmont-01",
-        mountains: "True",
+        mountains: "Unknown",
       },
       geometry: {
         type: "Polygon",
@@ -52397,7 +52397,7 @@ pct_data = {
         precinct: "810",
         area_short: "BO-08",
         area_long: "Boulder-08",
-        mountains: "True",
+        mountains: "Unknown",
       },
       geometry: {
         type: "Polygon",
@@ -57109,7 +57109,7 @@ pct_data = {
         precinct: "818",
         area_short: "BO-08",
         area_long: "Boulder-08",
-        mountains: "True",
+        mountains: "False",
       },
       geometry: {
         type: "Polygon",
@@ -57181,7 +57181,7 @@ pct_data = {
         precinct: "401",
         area_short: "ER-01",
         area_long: "Erie-01",
-        mountains: "True",
+        mountains: "Unknown",
       },
       geometry: {
         type: "Polygon",
