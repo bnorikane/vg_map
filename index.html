@@ -31,9 +31,10 @@
   <body>
     <div class="grid">
       <aside id="side-bar" class="sidebar">
-        <h2>BCDP</h2>
-
-        <h3 class="sb-help">click on precinct</h3>
+        <div>
+          <h2>BCDP</h2>
+          <h3 class="sb-help">click on precinct</h3>
+        </div>
         <div class="vg-container">
           <h3>Voter Guide Delivery</h3>
           <h4 class="info">Area: <span id="area"></span></h4>
@@ -91,6 +92,9 @@
     <script type="text/javascript" src="data/areas_data.js"></script>
 
     <!-- /////////    MAIN JAVASCRIPT CODE     //////// -->
+    <script type="text/javascript" src="js/vg_map.js"></script>
+
+    <!-- moved to vg_map.js file 
     <script type="text/javascript">
       //////////////   CREATE MAP OBJECT   //////////////
       // Set map options
@@ -300,6 +304,6 @@
 
       // Add layerControl
       const layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
-    </script>
+    </script> -->
   </body>
 </html>

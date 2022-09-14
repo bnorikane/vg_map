@@ -63,14 +63,14 @@ body {
   /* border: 1px solid red; */
 
   display: grid;
-  grid-template-columns: 30rem 1fr;
+  /* grid-template-columns: 30rem 1fr; */
 }
 
 /* Sidebar Styling */
 
 .sidebar {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 1rem 2rem;
   /* background-color: #f1f3f5; */
   background-color: #343a40;
