@@ -90,6 +90,7 @@ p {
 }
 
 .vg-container {
+  display: flex;
   background-color: #116ac6;
   border-radius: 1rem;
   margin: 1rem 0 0 0;
@@ -100,6 +101,7 @@ p {
   color: chartreuse;
   text-align: center;
   font-style: italic;
+  /* display: none; */
 }
 
 .sb-container {
@@ -107,6 +109,7 @@ p {
   margin: 1rem 0 0 0;
   padding: 0 1.2rem 1.2rem 1.2rem;
   background-color: #555555;
+  display: none;
 }
 
 .info {
