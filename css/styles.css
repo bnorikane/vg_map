@@ -112,7 +112,12 @@ p {
   display: none;
 }
 
-.info {
+.vg-info {
+  /* padding: 0 0 0 2rem; */
+  margin: 0.5rem 0 0 2rem;
+}
+
+.sb-info {
   /* padding: 0 0 0 2rem; */
   margin: 0.5rem 0 0 2rem;
 }
@@ -120,6 +125,19 @@ p {
 .legend li {
   list-style: none;
   margin: 1rem 0 0 -1.6rem;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  /* border: 2px solid red; */
 }
 
 .btn {

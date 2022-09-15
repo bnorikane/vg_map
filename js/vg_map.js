@@ -205,3 +205,30 @@ const overlayMaps = {
 
 // Add layerControl
 const layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+// Legend Control
+
+const legend = L.control({ position: "bottomright" });
+
+legend.onAdd = function (map) {
+  const lg_div = L.DomUtil.create("div", "info legend");
+  // var grades = [0, 10, 20, 50, 100, 200, 500, 1000];
+  // var labels = [];
+  // var from, to;
+
+  // //generate a label with colored square for each density grade
+  // for (var i = 0; i < grades.length; i++) {
+  //   div.innerHTML +=
+  //     '<i style="background:' +
+  //     getColor(grades[i] + 1) +
+  //     '"></i> ' +
+  //     grades[i] +
+  //     (grades[i + 1] ? "&ndash;" + grades[i + 1] + "<br>" : "+");
+  // }
+  lg_div.innerHTML = "<h4>Legend</h4>";
+  lg_div.innerHTML += '<i style="background: red"></i>';
+
+  return lg_div;
+};
+
+legend.addTo(map);
