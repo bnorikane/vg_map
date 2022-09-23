@@ -41,14 +41,14 @@ function pctStyle(feature) {
 }
 
 function pctFillColor(feature) {
-  switch (feature.properties.mountains) {
+  switch (feature.properties.rural) {
     case "Unknown":
       pct_color = "cyan";
       break;
-    case "True":
+    case "x":
       pct_color = "yellow";
       break;
-    case "False":
+    case "NaN":
       pct_color = "blue";
       break;
     default:
@@ -76,8 +76,8 @@ function onEachFeature(feature, layer) {
     feature.properties.area_short +
     "<br >PCT: " +
     feature.properties.precinct +
-    "<br >Mail: " +
-    feature.properties.mountains +
+    "<br >VG: " +
+    feature.properties.mail +
     "</b>";
 
   layer.bindTooltip(tooltipContent, {
@@ -117,7 +117,7 @@ function displayPctInfo(e) {
 
   // set mail status by mountains property
   document.getElementById("mountains").innerHTML =
-    e.target.feature.properties.mountains;
+    e.target.feature.properties.mail;
 }
 
 // mouseout event handler
