@@ -57717,7 +57717,7 @@ pct_data = {
         precinct: '904',
         area_short: 'MT-01',
         area_long: 'Mountains-01',
-        rural: null,
+        rural: 'x',
         mail: 'mail',
       },
       geometry: {
